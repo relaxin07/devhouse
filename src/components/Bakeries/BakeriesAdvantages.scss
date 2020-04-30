@@ -1,0 +1,22 @@
+.advantages{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  &__item{
+    text-align: center;
+    width: 200px;
+    padding:0 10px;
+    margin: 0 30px
+  }
+  &__img{
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    background-color: #EAEAEA;
+    margin: auto;
+  }
+  &__descrp{
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+}
