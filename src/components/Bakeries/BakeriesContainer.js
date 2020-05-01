@@ -18,7 +18,7 @@ class BakeriesContainer extends Component {
       this.setState(() => ({ data: this.handlerGetImages(this.props.bakeries) }))
     }
   }
-  handlerGetImages = ({ bakeriesList }) => {
+  handlerGetImages = (bakeriesList) => {
     return bakeriesList
       .filter(({ picture }) => typeof picture == 'number')
       .map(({ picture }) => {
