@@ -47,7 +47,7 @@ class Location extends Component {
     const renderResult = this.renderData(data)
     return (
       <div className="s-location">
-        <h3>Our most popular location</h3>
+        <h2 className="location-title">Our most popular location</h2>
         <div className="location">{renderResult}</div>
       </div>
     )

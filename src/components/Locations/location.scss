@@ -1,7 +1,34 @@
+.s-location{
+  margin-top: 100px;
+  @media(max-width:767px){
+    margin-top: 50px;
+  }
+}
 .location{
   display: flex;
   justify-content: flex-start;
-  &__items{
-    margin-right:150px
+  flex-wrap:wrap;
+  margin-bottom: 50px;
+  @media(max-width: 768px){
+    justify-content: center;
   }
+  @media(max-width: 480px){
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__items{
+    margin-right:150px;
+    @media(max-width:768px){
+    margin:0 20px;
+  }
+  }
+  &__item{
+    margin-top: 15px;
+  }
+}
+.location-title{
+  font-size: 30px;
+  padding:10px 0;
+  border-bottom: 1px solid #7373737a;
 }

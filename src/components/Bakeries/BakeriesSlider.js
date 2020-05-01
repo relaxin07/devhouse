@@ -17,7 +17,7 @@ class BakeriesSlider extends Component {
     if (Array.isArray(arr)) {
       return arr.map((item, i) => {
         return (
-          <div key={i}>
+          <div key={i} style={{ margin: 10 + 'px' }}>
             <img src={`${item}`} alt="" />
           </div>
         )
@@ -32,6 +32,21 @@ class BakeriesSlider extends Component {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
+      className: 'bakeries-slider',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     }
     const renderResult = loading ? (
       <Slider {...settings}>{this.renderItems(this.props.data)}</Slider>
@@ -39,9 +54,9 @@ class BakeriesSlider extends Component {
       <CircularProgress />
     )
     return (
-      <div>
-        <h3>The best bakeries</h3>
-        {renderResult}
+      <div className="s-bakeries">
+        <h3 className="bakeries-title">The best bakeries</h3>
+        <div className="bakeries-slider-wrap"> {renderResult}</div>
       </div>
     )
   }

@@ -22,7 +22,7 @@ class LocationsContainer extends Component {
       this.setState(() => ({ data: this.handlerGetCityList(this.props.cities) }))
     }
   }
-  handlerGetCityList = ({ citiesList }) => {
+  handlerGetCityList = (citiesList) => {
     return citiesList.map(({ name }) => name)
   }
 

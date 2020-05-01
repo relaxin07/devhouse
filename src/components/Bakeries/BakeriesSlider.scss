@@ -1,9 +1,23 @@
-.slick-next {
-  right: 25px;
-}
-.slick-prev{
-  left: 25px;
+
+.slick-arrow{
+  &:before{
+    color:#000
+  }
 }
 img{
   max-width: 100%;
 }
+.s-bakeries{
+
+}
+.bakeries-title{
+  color: #333;
+  font-size :20px;
+  border-bottom: 1px solid #7373737a;
+  padding:5px 0;
+}
+.bakeries-slider-wrap{
+  margin-top: 50px;
+  padding:0 30px;
+}
+
