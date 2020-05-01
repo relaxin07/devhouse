@@ -3,7 +3,6 @@ import { bindActionCreators } from 'redux'
 import * as actions from '../../store/modules/bakers'
 import { connect } from 'react-redux'
 import deepEqual from 'deep-equal'
-import { getCitiesAsync } from '../../store/modules/bakers'
 import Location from './Location'
 
 class LocationsContainer extends Component {
