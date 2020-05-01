@@ -1,4 +1,4 @@
-class Service {
+class Api {
   _defaultPath = 'http://api.dev.cakeiteasy.no/api/store'
   async getResource(url) {
     const result = await fetch(`${this._defaultPath}${url}`)
@@ -15,6 +15,6 @@ class Service {
   }
 }
 
-const BakerService = new Service()
+const BakerService = new Api()
 
 export default BakerService
